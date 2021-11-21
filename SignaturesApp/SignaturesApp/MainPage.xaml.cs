@@ -1,5 +1,6 @@
 ﻿using SignaturePad.Forms;
 using SignaturesApp.Model;
+using SignaturesApp.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,14 +22,14 @@ namespace SignaturesApp
 
         private async void SaveButton_Clicked(object sender, EventArgs e)
         {
-            Stream image = await PadView.GetImageStreamAsync(SignatureImageFormat.Jpeg);
+            Stream image = await PadView.GetImageStreamAsync(SignatureImageFormat.Png);
             // var image = await signature.GetImageStreamAsync(SignaturePad.Forms.SignatureImageFormat.Png);
             var mStream = (MemoryStream)image;
             byte[] data = mStream.ToArray();
             valueBase64 = Convert.ToBase64String(data);
 
 
-            if(String.IsNullOrWhiteSpace(name.Text) == true || String.IsNullOrWhiteSpace(description.Text) == true)
+            if(String.IsNullOrWhiteSpace(name.Text) || String.IsNullOrWhiteSpace(description.Text))
             {
                 await DisplayAlert("Error", "Se deben llenar los campos de nombre y descripcion", "Aceptar");
             }
@@ -45,14 +46,14 @@ namespace SignaturesApp
             if(result != 1)
             {
                 await DisplayAlert("Error", "Ocurrio un error, porfavor intente de nuevo", "Aceptar");
-
             }
 
+            await DisplayAlert("Aviso", "Se ha guardado correctamente", "Aceptar");
         }
             
-        private void ViewSignaturesButton_Clicked(object sender, EventArgs e)
+        private async void ViewSignaturesButton_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new SignaturesList());
         }
 
         private void ClearButton_Clicked(object sender, EventArgs e)

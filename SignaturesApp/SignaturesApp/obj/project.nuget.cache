@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VUzoIqHRvLJSuxOKuh9DSCYORfrlpbcxaWoWnEr99cftW33XOsggoJ/TbRPnR16558h8DCwJqZRFExVsICfSIg==",
+  "dgSpecHash": "DQpove5ll41+I6EyscT40ilNV1fG2SKepFO48TDw9xVYOVUfUlNdfnWp5dYgaeWnG1OybIsh3AXocOlguiMwTg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jairo Perdomo\\source\\repos\\SignaturesApp\\SignaturesApp\\SignaturesApp\\SignaturesApp.csproj",
   "expectedPackageFiles": [
@@ -16,8 +16,8 @@
     "C:\\Users\\Jairo Perdomo\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Jairo Perdomo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\Jairo Perdomo\\.nuget\\packages\\xamarin.controls.signaturepad.forms\\3.0.0\\xamarin.controls.signaturepad.forms.3.0.0.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Users\\Jairo Perdomo\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Jairo Perdomo\\.nuget\\packages\\xamarin.forms\\5.0.0.2244\\xamarin.forms.5.0.0.2244.nupkg.sha512"
   ],
   "logs": []
 }
