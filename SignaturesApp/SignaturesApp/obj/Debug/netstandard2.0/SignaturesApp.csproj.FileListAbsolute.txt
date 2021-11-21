@@ -14,3 +14,4 @@ C:\Users\Jairo Perdomo\source\repos\SignaturesApp\SignaturesApp\SignaturesApp\ob
 C:\Users\Jairo Perdomo\source\repos\SignaturesApp\SignaturesApp\SignaturesApp\obj\Debug\netstandard2.0\ref\SignaturesApp.dll
 C:\Users\Jairo Perdomo\source\repos\SignaturesApp\SignaturesApp\SignaturesApp\obj\Debug\netstandard2.0\SignaturesApp.pdb
 C:\Users\Jairo Perdomo\source\repos\SignaturesApp\SignaturesApp\SignaturesApp\obj\Debug\netstandard2.0\SignaturesApp.csproj.AssemblyReference.cache
+C:\Users\Jairo Perdomo\source\repos\SignaturesApp\SignaturesApp\SignaturesApp\obj\Debug\netstandard2.0\View\ShowSignatureInformation.xaml.g.cs

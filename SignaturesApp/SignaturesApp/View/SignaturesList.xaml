@@ -2,12 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SignaturesApp.View.SignaturesList">
-    
+
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Frame BackgroundColor="#2196F3" Padding="10" CornerRadius="0">
-            <Label Text="Lista de Firmas" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <ListView x:Name="listSignatures" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Image x:Name="imageSig"></Image>
+        <ListView x:Name="listSignatures" ItemSelected="listSignatures_ItemSelected" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -20,11 +18,12 @@
                                 <ColumnDefinition Width="*"></ColumnDefinition>
                                 <ColumnDefinition Width="*"></ColumnDefinition>
                                 <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <Image x:Name="imageSig"></Image>
-                            <Label Text="{Binding imageCode}" Grid.Row="0" Grid.Column="0" TextColor="Black"></Label>
-                            <Label x:Name="txtName" Text="{Binding name}" Grid.Row="0" Grid.Column="1" TextColor="Black" Padding="10"></Label>
+                            <Label Text="{Binding code}" Grid.Row="0" Grid.Column="0" TextColor="Black"></Label>
+                            <Label x:Name="txtName" Text="{Binding name}" Grid.Row="1" Grid.Column="1" TextColor="Black" Padding="10"></Label>
                             <Label Text="{Binding description}" Grid.Row="0" Grid.Column="2" TextColor="Black"></Label>
+                            <Label x:Name="imageCodeText" Text="{Binding imageCode}" Grid.Row="3" Grid.Column="0" TextColor="Black" IsVisible="false"></Label>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
